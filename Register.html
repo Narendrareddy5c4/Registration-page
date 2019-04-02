@@ -4,30 +4,33 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<style>
 		
-		fieldset{background-color:;
-			
+		fieldset{
 			font-size:20;
-			height:480;
+			height:500;
 				width:400;
 				left:460;
 				position:relative;
 				}
 			h1{font-family:'Comic Sans MS'}
+			h3{font-family:'Comic Sans MS'}
 			.B{border-radius:10px;
 				background-color:green;}
-			img{position:relative;
-			width:20;
-			height:20;}
-			.B2{border-radius:50%;}
+			
+			.B2:hover{
+				background-color:green;
+				color:white; 
+
+			}
 			.i{background-color:red;}
 	</style>
     </head>
     <body>
 	
-		<h1 align=center><font color=white> REGISTRATION FORM</font></h1>
+		<h1 align=center style="background-color:green;
+				color:white;"><font > REGISTRATION FORM</font></h1>
        	<form name="f1" action="" method="POST" >
 	       <fieldset>
-	    	<legend>REGISTER HERE </legend>
+	    	<legend style="color: orange;"><h3>REGISTER HERE</h3> </legend>
 			<table border=0 align=center cellpadding=5 cellspacing=10>
 				<tr>
 					<td>UserName :</td>
@@ -76,7 +79,7 @@
 				</tr>
 				<tr>
 					<td align=center><input type="reset" class="B2" value="Reset"/></td>
-					<td><input type="button"  class="B2"  value="Register" onclick="validate()"/></td>
+					<td><input type="submit" class="B2" value="register"></td>
 				</tr>
 			</table>
 		</fieldset>
