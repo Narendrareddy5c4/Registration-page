@@ -1,0 +1,85 @@
+ <html>
+    <head>
+	<title> Register Form </title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<style>
+		
+		fieldset{background-color:;
+			
+			font-size:20;
+			height:480;
+				width:400;
+				left:460;
+				position:relative;
+				}
+			h1{font-family:'Comic Sans MS'}
+			.B{border-radius:10px;
+				background-color:green;}
+			img{position:relative;
+			width:20;
+			height:20;}
+			.B2{border-radius:50%;}
+			.i{background-color:red;}
+	</style>
+    </head>
+    <body>
+	
+		<h1 align=center><font color=white> REGISTRATION FORM</font></h1>
+       	<form name="f1" action="" method="POST" >
+	       <fieldset>
+	    	<legend>REGISTER HERE </legend>
+			<table border=0 align=center cellpadding=5 cellspacing=10>
+				<tr>
+					<td>UserName :</td>
+					<td><input type="text"  name="t1"  placeholder="User name"></td>
+			
+				</tr>
+				<tr>
+					<td>Password :</td>
+					<td><input type="password"   name="t2" maxlength=10 placeholder="Password"/></td>
+				
+				</tr>
+				<tr>
+					<td> Confirm Password :</td>
+					<td><input type="password"  name="t3" maxlength=10 placeholder="Re-enter Password"/></td>
+				
+				</tr>
+				<tr>
+					<td>Email :</td>
+					<td><input type="text"  name="t4"  maxlength=30 placeholder="Enter Email"/></td>
+			
+				</tr>
+				<tr>
+					<td>Phoneno :</td>
+					<td><input type="text"   maxlength=10 placeholder="Enter phone no"/></td>
+				</tr>
+				<tr>
+					<td>Gender :</td>
+					<td><input type="Radio" value="male" name="gender">Male 
+	           		           	<input type="Radio" value="female" name="gender">Female
+					</td>
+				</tr>
+				<tr>
+					<td>Address :</td>
+					<td><textarea rows=5  placeholder="Address..." ></textarea></td>
+				</tr>
+				<tr>
+					<td>State :</td>
+					<td><select name=state>
+						<option> Select ur state </option>
+						<option> Andhra pradesh </option>
+						<option> Jammu Kashmir </option>
+						<option> Maharastra </option>
+						<option> Telangana </option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td align=center><input type="reset" class="B2" value="Reset"/></td>
+					<td><input type="button"  class="B2"  value="Register" onclick="validate()"/></td>
+				</tr>
+			</table>
+		</fieldset>
+		</form>
+     </body>
+</html>
